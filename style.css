@@ -1,0 +1,114 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+    border: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-style: italic;
+    /* font-weight: bold; */
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Container. */
+
+.container {
+    margin: auto;
+    width: 600px;
+    background-color: #eee;
+}
+
+/* Kalender. */
+
+.kalender {
+    padding: 1rem;
+}
+
+/* Header. */
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.header button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+}
+
+.header button:hover {
+    background-color: #fff;
+}
+
+.header .bulan {
+    margin: 0 .5rem;
+}
+
+/* Hari. */
+
+.container-hari {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(50px, 1fr));
+    grid-auto-rows: 2rem;
+    gap: .2rem;
+    margin-bottom: .2rem;
+}
+
+.container-hari .hari {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-hari .hari.libur {
+    color: #f13f3f;
+}
+
+/* Tanggal. */
+
+.container-tanggal {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(50px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    gap: .2rem;
+}
+
+/* Tanggal. */
+
+.tanggal {
+    background-color: #fff;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tanggal.fill span {
+    color: #aaa;
+}
+
+.tanggal.libur span {
+    color: #f13f3f;
+}
