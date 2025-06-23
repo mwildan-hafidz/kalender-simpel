@@ -95,8 +95,6 @@ button {
     gap: .2rem;
 }
 
-/* Tanggal. */
-
 .tanggal {
     background-color: #fff;
     aspect-ratio: 1 / 1;
@@ -105,10 +103,28 @@ button {
     align-items: center;
 }
 
+.tanggal span {
+    z-index: 1;
+}
+
 .tanggal.fill span {
     color: #aaa;
 }
 
 .tanggal.libur span {
     color: #f13f3f;
+}
+
+/* Remainder. */
+
+.reminder {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: #eee;
+}
+
+.hidden {
+    display: none;
 }
