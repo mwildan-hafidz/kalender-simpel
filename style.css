@@ -26,14 +26,17 @@ button {
 /* Container. */
 
 .container {
-    margin: auto;
-    width: 600px;
-    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 /* Kalender. */
 
 .kalender {
+    background-color: #eee;
+    width: 600px;
     padding: 1rem;
 }
 
@@ -101,10 +104,15 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .tanggal span {
     z-index: 1;
+}
+
+.tanggal.fill {
+    cursor: default;
 }
 
 .tanggal.fill span {
@@ -122,8 +130,115 @@ button {
     width: 2rem;
     height: 2rem;
     border-radius: 1rem;
-    background-color: #eee;
+    background-color: #cce1ff;
 }
+
+/* Reminder list. */
+
+.container-reminder {
+    background-color: #eee;
+    min-width: 200px;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+.container-reminder li {
+    display: block;
+    margin-bottom: .5rem;
+    list-style: none;
+}
+
+/* Modal. */
+
+.container-modal,
+.container-modal-edit {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, .4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal,
+.modal-edit {
+    background-color: #fff;
+    padding: 1rem;
+    /* border-radius: .5rem; */
+}
+
+.modal .teks-modal,
+.modal-edit .teks-modal-edit {
+    font-size: 1.5rem;
+}
+
+.modal .tgl-modal,
+.modal-edit .tgl-modal-edit {
+    color: #777;
+    font-style: italic;
+}
+
+.modal #input-reminder,
+.modal-edit #input-edit {
+    display: block;
+    border: 1px solid black;
+    border-radius: .2rem;
+    width: 300px;
+    padding: .2rem .5rem;
+}
+
+.modal .teks-modal,
+.modal .tgl-modal,
+.modal #input-reminder,
+.modal-edit .teks-modal-edit,
+.modal-edit .tgl-modal-edit,
+.modal-edit #input-edit {
+    margin-bottom: .5rem;
+}
+
+.modal div,
+.modal-edit div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal button,
+.modal-edit button {
+    margin-left: .5rem;
+    padding: .5rem 1rem;
+    background-color: #fff;
+    border-radius: .2rem;
+    color: #fff;
+}
+
+.modal .tbl-batal,
+.modal-edit .tbl-batal {
+    background-color: #333;
+}
+
+.modal .tbl-tambah,
+.modal-edit .tbl-edit {
+    background-color: #82b5fd;
+}
+
+.modal-edit .tbl-hapus {
+    background-color: #f13f3f;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.modal .tbl-batal:hover,
+.modal .tbl-tambah:hover,
+.modal-edit .tbl-batal:hover,
+.modal-edit .tbl-edit:hover {
+    opacity: .8;
+}
+
+/* Hidden. */
 
 .hidden {
     display: none;
