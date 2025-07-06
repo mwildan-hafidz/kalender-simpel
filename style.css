@@ -139,12 +139,12 @@ button {
     background-color: #eee;
     min-width: 200px;
     margin-left: 1rem;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .container-reminder li {
     display: block;
-    margin-bottom: .5rem;
+    padding: .5rem;
     list-style: none;
 }
 
