@@ -131,9 +131,7 @@ button {
 /* Reminder list. */
 
 .container-reminder {
-    background-color: #eee;
     min-width: 200px;
-    margin-left: 1rem;
     padding: .5rem;
 }
 
