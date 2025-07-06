@@ -9,31 +9,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="kalender">
-            <div class="header">
-                <div>
-                    <button class="tbl-kiri">&#60;</button>
-                    <h1 class="bulan">Bulan</h1>
-                    <button class="tbl-kanan">&#62;</button>
+    <main>
+        <div class="container">
+            <div class="kalender">
+                <div class="header">
+                    <div>
+                        <button class="tbl-kiri">&#60;</button>
+                        <h1 class="bulan">Bulan</h1>
+                        <button class="tbl-kanan">&#62;</button>
+                    </div>
+                    <h2 class="tahun">Tahun</h2>
                 </div>
-                <h2 class="tahun">Tahun</h2>
+                <div class="container-hari">
+                    <div class="hari libur"><span>Minggu</span></div>
+                    <div class="hari"><span>Senin</span></div>
+                    <div class="hari"><span>Selasa</span></div>
+                    <div class="hari"><span>Rabu</span></div>
+                    <div class="hari"><span>Kamis</span></div>
+                    <div class="hari"><span>Jumat</span></div>
+                    <div class="hari"><span>Sabtu</span></div>
+                </div>
+                <div class="container-tanggal"></div>
             </div>
-            <div class="container-hari">
-                <div class="hari libur"><span>Minggu</span></div>
-                <div class="hari"><span>Senin</span></div>
-                <div class="hari"><span>Selasa</span></div>
-                <div class="hari"><span>Rabu</span></div>
-                <div class="hari"><span>Kamis</span></div>
-                <div class="hari"><span>Jumat</span></div>
-                <div class="hari"><span>Sabtu</span></div>
+            <div class="container-reminder">
+                <ul class="container-list-reminder"></ul>
             </div>
-            <div class="container-tanggal"></div>
         </div>
-        <div class="container-reminder">
-            <ul class="container-list-reminder"></ul>
-        </div>
-    </div>
+    </main>
     
     <!-- Modal. -->
     <div class="container-modal hidden">
